@@ -1,0 +1,167 @@
+object FrmMain: TFrmMain
+  Left = 351
+  Height = 257
+  Top = 241
+  Width = 417
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'fpRandom'
+  ClientHeight = 257
+  ClientWidth = 417
+  OnCreate = FormCreate
+  OnMouseDown = FormMouseDown
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object EdNick: TLabeledEdit
+    Left = 104
+    Height = 26
+    Top = 8
+    Width = 193
+    EditLabel.AnchorSideTop.Control = EdNick
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = EdNick
+    EditLabel.AnchorSideBottom.Control = EdNick
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 11
+    EditLabel.Height = 15
+    EditLabel.Top = 14
+    EditLabel.Width = 90
+    EditLabel.Caption = 'Случайный ник:'
+    EditLabel.ParentColor = False
+    Font.Name = 'Courier New'
+    Font.Style = [fsBold]
+    LabelPosition = lpLeft
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object BtnGenNick: TButton
+    Left = 304
+    Height = 25
+    Top = 9
+    Width = 102
+    Caption = 'Сгенерировать'
+    OnClick = BtnGenNickClick
+    TabOrder = 1
+  end
+  object EdPassword: TLabeledEdit
+    Left = 104
+    Height = 26
+    Top = 46
+    Width = 193
+    EditLabel.AnchorSideTop.Control = EdPassword
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = EdPassword
+    EditLabel.AnchorSideBottom.Control = EdPassword
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 56
+    EditLabel.Height = 15
+    EditLabel.Top = 52
+    EditLabel.Width = 45
+    EditLabel.Caption = 'Пароль:'
+    EditLabel.ParentColor = False
+    Font.Name = 'Courier New'
+    Font.Style = [fsBold]
+    LabelPosition = lpLeft
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object BtnGenPass: TButton
+    Left = 304
+    Height = 25
+    Top = 47
+    Width = 102
+    Caption = 'Сгенерировать'
+    OnClick = BtnGenPassClick
+    TabOrder = 3
+  end
+  object EdCharCount: TLabeledEdit
+    Left = 152
+    Height = 23
+    Top = 80
+    Width = 32
+    EditLabel.AnchorSideTop.Control = EdCharCount
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = EdCharCount
+    EditLabel.AnchorSideBottom.Control = EdCharCount
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 23
+    EditLabel.Height = 15
+    EditLabel.Top = 84
+    EditLabel.Width = 126
+    EditLabel.Caption = 'Количество символов:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 4
+    Text = '8'
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 136
+    Top = 112
+    Width = 398
+    Caption = 'Алфавиты'
+    ClientHeight = 116
+    ClientWidth = 394
+    TabOrder = 5
+    object ChkNabor1: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 5
+      Width = 80
+      Caption = 'ChkNabor1'
+      TabOrder = 0
+    end
+    object ChkNabor2: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 25
+      Width = 80
+      Caption = 'ChkNabor2'
+      TabOrder = 1
+    end
+    object ChkNabor3: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 45
+      Width = 80
+      Caption = 'ChkNabor3'
+      TabOrder = 2
+    end
+    object ChkNabor4: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 65
+      Width = 80
+      Caption = 'ChkNabor4'
+      TabOrder = 3
+    end
+    object CheckBox5: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 85
+      Width = 126
+      Caption = 'Пользовательский:'
+      TabOrder = 4
+    end
+    object EdUser: TEdit
+      Left = 144
+      Height = 23
+      Top = 83
+      Width = 232
+      TabOrder = 5
+    end
+  end
+  object UpDown1: TUpDown
+    Left = 184
+    Height = 23
+    Top = 80
+    Width = 16
+    Associate = EdCharCount
+    Min = 0
+    Position = 8
+    TabOrder = 6
+    Wrap = False
+  end
+end
