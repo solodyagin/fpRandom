@@ -11,20 +11,13 @@ object FrmMain: TFrmMain
   OnCreate = FormCreate
   OnMouseDown = FormMouseDown
   Position = poScreenCenter
-  LCLVersion = '1.6.4.0'
+  LCLVersion = '2.0.2.0'
   object EdNick: TLabeledEdit
     Left = 104
     Height = 26
     Top = 8
     Width = 193
-    EditLabel.AnchorSideTop.Control = EdNick
-    EditLabel.AnchorSideTop.Side = asrCenter
-    EditLabel.AnchorSideRight.Control = EdNick
-    EditLabel.AnchorSideBottom.Control = EdNick
-    EditLabel.AnchorSideBottom.Side = asrBottom
-    EditLabel.Left = 11
     EditLabel.Height = 15
-    EditLabel.Top = 14
     EditLabel.Width = 90
     EditLabel.Caption = 'Случайный ник:'
     EditLabel.ParentColor = False
@@ -49,14 +42,7 @@ object FrmMain: TFrmMain
     Height = 26
     Top = 46
     Width = 193
-    EditLabel.AnchorSideTop.Control = EdPassword
-    EditLabel.AnchorSideTop.Side = asrCenter
-    EditLabel.AnchorSideRight.Control = EdPassword
-    EditLabel.AnchorSideBottom.Control = EdPassword
-    EditLabel.AnchorSideBottom.Side = asrBottom
-    EditLabel.Left = 56
     EditLabel.Height = 15
-    EditLabel.Top = 52
     EditLabel.Width = 45
     EditLabel.Caption = 'Пароль:'
     EditLabel.ParentColor = False
@@ -81,14 +67,7 @@ object FrmMain: TFrmMain
     Height = 23
     Top = 80
     Width = 32
-    EditLabel.AnchorSideTop.Control = EdCharCount
-    EditLabel.AnchorSideTop.Side = asrCenter
-    EditLabel.AnchorSideRight.Control = EdCharCount
-    EditLabel.AnchorSideBottom.Control = EdCharCount
-    EditLabel.AnchorSideBottom.Side = asrBottom
-    EditLabel.Left = 23
     EditLabel.Height = 15
-    EditLabel.Top = 84
     EditLabel.Width = 126
     EditLabel.Caption = 'Количество символов:'
     EditLabel.ParentColor = False
@@ -159,9 +138,9 @@ object FrmMain: TFrmMain
     Top = 80
     Width = 16
     Associate = EdCharCount
-    Min = 0
+    Min = 1
+    OnChanging = UpDown1Changing
     Position = 8
     TabOrder = 6
-    Wrap = False
   end
 end

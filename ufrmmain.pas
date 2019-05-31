@@ -30,6 +30,7 @@ type
     procedure BtnGenPassClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+    procedure UpDown1Changing(Sender: TObject; var AllowChange: Boolean);
   private
     { private declarations }
   public
@@ -146,6 +147,11 @@ const
 begin
   ReleaseCapture;
   SendMessage(Self.Handle, WM_SYSCOMMAND, SC_DragMove, 0);
+end;
+
+procedure TFrmMain.UpDown1Changing(Sender: TObject; var AllowChange: Boolean);
+begin
+  BtnGenPass.Click;
 end;
 
 procedure TFrmMain.BtnGenNickClick(Sender: TObject);
