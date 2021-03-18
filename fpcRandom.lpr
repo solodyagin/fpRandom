@@ -1,4 +1,4 @@
-program fpRandom;
+program fpcRandom;
 
 {$mode objfpc}{$H+}
 

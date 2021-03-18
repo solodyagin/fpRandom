@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <PathDelim Value="\"/>
     <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
       <SessionStorage Value="None"/>
-      <MainUnit Value="0"/>
-      <Title Value="fpRandom"/>
+      <Title Value="fpcRandom"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
@@ -18,7 +20,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="4"/>
+      <BuildNr Value="5"/>
       <Language Value="0419"/>
     </VersionInfo>
     <BuildModes Count="2">
@@ -28,7 +30,7 @@
           <Version Value="11"/>
           <PathDelim Value="\"/>
           <Target>
-            <Filename Value="fpRandom"/>
+            <Filename Value="fpcRandom"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
@@ -81,7 +83,7 @@
     </RequiredPackages>
     <Units Count="2">
       <Unit0>
-        <Filename Value="fpRandom.lpr"/>
+        <Filename Value="fpcRandom.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
@@ -97,7 +99,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="fpRandom"/>
+      <Filename Value="fpcRandom"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
